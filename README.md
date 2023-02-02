@@ -78,16 +78,16 @@ GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 1. I self-learned most techniques and designed the whole immersive background in Unity!
 <img width="1085" alt="Screen Shot 2023-02-01 at 8 25 30 PM" src="https://user-images.githubusercontent.com/100061103/216215916-033ae49d-55db-4581-a3ea-f02541ec9690.png">
 
-2. I used Unity and Visual Studio to simulate players’ palms and finger motions while utilizing controllers and added interactable weapons to improve gaming UX
-<img width="746" alt="Screen Shot 2023-02-01 at 8 33 51 PM" src="https://user-images.githubusercontent.com/100061103/216217381-cac3ca44-3c59-40d8-938b-30d7a7545375.png">
-<img width="746" alt="Screen Shot 2023-02-01 at 8 37 33 PM" src="https://user-images.githubusercontent.com/100061103/216217514-a0d343d4-d5be-41e1-baae-0f3041cf1162.png">
-
-3. I implemented interactable and refreshable dummies and targets for VR fighting adaptation and self-practice
+2. I used Unity and Visual Studio to simulate players’ palms and finger motions while utilizing controllers and added interactable weapons to improve gaming UX and I implemented interactable and refreshable dummies and targets for VR fighting adaptation and self-practice
 <img width="746" alt="Screen Shot 2023-02-01 at 8 33 00 PM" src="https://user-images.githubusercontent.com/100061103/216217328-c8895eeb-a895-465b-8195-c219d86e2058.png">
 
 <img width="746" alt="Screen Shot 2023-02-01 at 8 35 11 PM" src="https://user-images.githubusercontent.com/100061103/216217418-010b4268-9a96-41b5-91da-10dcfd6dc6b5.png">
 
-4. I designed various levels of motion tasks (normal walking, teleportation, grapple, and rocket) to help people adapt movement in VR and relieve cybersickness
+4. I designed various levels of movement options (normal walking, teleportation, grapple, and rocket) to help people adapt movement in VR and relieve cybersickness
+- Normal Walking
+<img width="689" alt="Screen Shot 2023-02-01 at 8 56 50 PM" src="https://user-images.githubusercontent.com/100061103/216220335-72400a2d-5489-4807-ac82-d1d80c366798.png">
+<img width="716" alt="Screen Shot 2023-02-01 at 8 57 00 PM" src="https://user-images.githubusercontent.com/100061103/216220413-f6acf396-ba06-4607-9cec-f35a9980237a.png">
+
 - Teleportation
 <img width="750" alt="Screen Shot 2023-02-01 at 8 40 21 PM" src="https://user-images.githubusercontent.com/100061103/216219207-e9981cf7-a538-4ef8-a02f-b249a7b416ca.png">
 
