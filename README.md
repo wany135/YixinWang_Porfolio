@@ -75,17 +75,25 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 
 GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 ---------------------------------------------------------------------------------------------------
-1. I self-learned and designed the whole immersive background in Unity!
+1. I self-learned most techniques and designed the whole immersive background in Unity!
 <img width="1085" alt="Screen Shot 2023-02-01 at 8 25 30 PM" src="https://user-images.githubusercontent.com/100061103/216215916-033ae49d-55db-4581-a3ea-f02541ec9690.png">
 
-2. Used Unity and Visual Studio to simulate players’ palms and finger motions while utilizing controllers and added interactable weapons and movement-assist toolkits to improve gaming UX
+2. I used Unity and Visual Studio to simulate players’ palms and finger motions while utilizing controllers and added interactable weapons to improve gaming UX
 <img width="746" alt="Screen Shot 2023-02-01 at 8 33 51 PM" src="https://user-images.githubusercontent.com/100061103/216217381-cac3ca44-3c59-40d8-938b-30d7a7545375.png">
 <img width="746" alt="Screen Shot 2023-02-01 at 8 37 33 PM" src="https://user-images.githubusercontent.com/100061103/216217514-a0d343d4-d5be-41e1-baae-0f3041cf1162.png">
 
-3. Implemented interactable and refreshable dummies and targets for VR fighting adaptation and self-practice
+3. I implemented interactable and refreshable dummies and targets for VR fighting adaptation and self-practice
 <img width="746" alt="Screen Shot 2023-02-01 at 8 33 00 PM" src="https://user-images.githubusercontent.com/100061103/216217328-c8895eeb-a895-465b-8195-c219d86e2058.png">
 
 <img width="746" alt="Screen Shot 2023-02-01 at 8 35 11 PM" src="https://user-images.githubusercontent.com/100061103/216217418-010b4268-9a96-41b5-91da-10dcfd6dc6b5.png">
 
+4. I designed various levels of motion tasks (normal walking, teleportation, grapple, and rocket) to help people adapt movement in VR and relieve cybersickness
+- Teleportation
+<img width="750" alt="Screen Shot 2023-02-01 at 8 40 21 PM" src="https://user-images.githubusercontent.com/100061103/216219207-e9981cf7-a538-4ef8-a02f-b249a7b416ca.png">
 
+- Grapple
+<img width="746" alt="Screen Shot 2023-02-01 at 8 37 33 PM" src="https://user-images.githubusercontent.com/100061103/216219332-7e3602b2-69ce-4b89-8533-209309075d42.png">
+
+- Rocket
+<img width="746" alt="Screen Shot 2023-02-01 at 8 33 51 PM" src="https://user-images.githubusercontent.com/100061103/216219292-8ed01470-ce32-4903-ab59-916060c17a75.png">
 
