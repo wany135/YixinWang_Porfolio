@@ -1,0 +1,518 @@
+---
+title: "Wang_FinalProject"
+author: "Yixin Wang"
+date: "2022-12-06"
+output:
+  pdf_document:
+    toc: yes
+  html_document:
+    toc: yes
+    number_sections: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# **Yixin Wang's Final Project**
+
+## **Introduction**
+This paper is amied at understanding the relationship between social media usage motivation (continuous) and phyiscal health (continuous) among young adults when the school resumed in-person class after the pandemic. I'll use PCA and linear regression to conduct this analysis.
+
+
+## **Caution!! I understand my sample size is around 210, which is smaller than 300. I have asked Dr. Crossley and he has approved me to keep using this dataset to conduct the PCA.**
+
+## **Research Question**
+How do different motivations using the top 4 most frequently used social media platforms, relate to young adults' physical health when students resumed in-person class after the pandemic? Is there a linear regression model between the dependent variable and independent variables?
+
+### Hypothesis
+y - continuous dependent variable, which is the Physical Health of young adults when they resumed in-person class after the pandemic.
+x - continuous independent variables, which are 18 motivations for using the top 4 social media platforms; thus there should be 18 seperate hypothesis here (before conducting PCA). My below hypothesis is a general hypothesis for y and each x.
+$$
+H_0: \rho_{yx} = 0
+$$
+
+$$
+H_1: \rho_{yx} \neq0
+$$
+
+Furthermore, I assume the slope for significant independent variables and dependent variables should be negative.
+
+
+## **Data**
+The data used in this assignment was collected by myself in November, 2021 at Vanderbilt University, which is primarily used as my honors independent project. Participants were first asked to recall what they were doing and what they were like during September 2020 (during the Fall semester a year ago from when they answered the questions). They were first asked some questions about where and how they took classes. Then, they were asked about SMU intensity, SMU motivations, SMU addictions, well-being, mental health, and perceived stress respectively. All the participants complete the measures in the same order. After they finished the first part of the survey, they were led to focus on the past month of the time they answered the survey, which was October or November 2021. Then, they answered the same group of questions. At the end of the study, participants answered a series of demographic questions. For this assignment 3, I will only focus on the data collected at Time 1, which intends to show what participants were doing during September 2020.
+
+### Variables Discussion
+DV: Young Adults' Physical Health
+- This outcome variable is important because a lot of research evidence has shown that young adults have higher rate of diabetes, cardiovascular problems, muscular endurance, and etc. Thus, it is essential to understand if social media use motivation influence young adults' physical health.
+
+
+IV: Social Media Usage Motivation: What specific motivations do users have for using Top 4 social media platforms among young adults (TikTok, Snapchat, YouTube, and Instagram) at Time Stamp 2? social media usage motivation always link tightly to students personal mental and physical status. It is interesting to see how the patterns of various SMU motivations combined together to influence physical health. IV may negatively relate to DV.
+
+
+Motivation list:
+1) to eat
+2) friends
+3) family
+4) meet
+5) romance
+6) hookup
+7) compare
+8) entertain
+9) do
+10) wear
+11) stay_informed_platform
+12) forget
+13) relax
+14) buy
+15) comments
+16) support
+17) opinion
+18) academic purpose
+
+### **Considering the privacy and confidential issue of the dataset, you can contact me to see the data for further questions. Dr. Crossley has approved my special request on this.**
+
+## **Data Wrangling**
+
+### In order to organize the data successfully the following steps were completed. 
+1. Called in dataframes as tibble 
+
+2. Filtered dataframes to narrow scope to answer research question 
+
+3. clean the data
+
+```{r}
+rm(list=ls(all=TRUE))
+library(tidyverse)
+library(psych)
+library(ggplot2)
+library(dplyr)
+```
+
+```{r}
+### let's call in our data as tibbles and examine the data we just called in first
+
+smu <- read.csv("social_media_use_T2.csv", header = TRUE) %>%
+  na_if("") %>% #convert empty cells to NA
+  select(1:19, 572) %>% #select variables we want to focus this time: ID, IVs (motivation), and DV (physical health)
+  na.omit() #get rid of NA variables
+
+str(smu)
+```
+
+### Visualize the continuous Predictors via Scatterplot by the outcome variable
+Let's take a comprehensive look at the correlation among outcome and predictor variables
+```{r}
+library(PerformanceAnalytics) #for chart.Correlation
+chart.Correlation(smu, histogram = TRUE, method = "pearson")
+```
+
+
+It seems like the comprehensive correlation chart is too packed to clearly observe due to a large number of IV. Thus, let's try to use colorful correlation graphs to see the strength of the correlation.
+
+```{r}
+library(corrplot)
+corrplot(cor(smu),  
+         type="lower", #put color strength on bottom 
+         tl.pos = "ld", #Character or logical, position of text labels, 'ld'(default if type=='lower') means left and diagonal, 
+         tl.cex = 0.5, #Numeric, for the size of text label (variable names). 
+         method="color",  
+         addCoef.col="black",  
+         diag=FALSE, 
+         tl.col="black", #The color of text label. 
+         tl.srt=45, #Numeric, for text label string rotation in degrees, see text 
+         is.corr = FALSE, 
+         number.digits = 3) #number of digits after decimal
+```
+
+
+Unfortunately, the colorful correlation graph is still too packed to observe. Thus, I choose to observe and interpret the correlation via correlation matrix. This is also the first step of PCA.
+
+## **Conduct PCA to reduce dimension**
+
+### Road Map for PCA
+1. Check for multicollinearity between variables (r > .899)
+2. Scale variables
+3. Visualize the data
+4. Bartlett’s test including sample size
+5. KMO on the data (look for variables below .5 and remove)
+6. Baseline PCA to check scree plot, SS loadings above 1, and normal distribution of variables
+7. Check that residuals are normally distributed
+8. PCA with selected number of components based on interpretation of scree plot and SS loadings
+9. Send factor scores csv
+
+### STEP 1: Correlations for Strong Multicollinearity
+```{r}
+corr_mat_pca <- cor(smu %>% select(2:19))
+
+corr_mat_pca
+#send to a csv file to check out
+
+write.csv(corr_mat_pca, "corr_matrix_for_pca.csv")
+#there is no variables having strong correlation (r>0.899), so we don't have to drop any variables now
+```
+
+
+### STEP 2: Scale all the variables
+```{r}
+library(psych)
+
+scaled_data_pca <- smu %>% 
+  select(2:19)%>% 
+  mutate_at(c(1:18),~(scale(.) %>% as.vector))
+
+str(scaled_data_pca)
+psych::describe(scaled_data_pca) #gives you a lot of descriptives quickly
+
+#note that kurtosis is a bit high on some of these
+```
+
+
+### STEP 3: Visualizing PCA 
+This is just to understand the underlying data. This is not the final PCA
+```{r}
+library(factoextra) #extract and visualize the output of multivariate data analyses, including 'PCA'
+
+#line below runs a simple PCA with a component for each variable. 
+#the most variance will be explained in component 1 and 2
+viz_pca <- prcomp(scaled_data_pca, center = TRUE,scale. = TRUE)
+
+summary(viz_pca) #show the proportion of variance explained by all possible components along with cumulative variance
+
+viz_pca$rotation #show the loadings for each component by variable
+
+#Graph of observations (i.e., schools). Schools with a similar profile are grouped together.
+
+fviz_pca_ind(viz_pca,
+             c = "point", #point
+             col.ind = "cos2", # Color by the quality of representation, 
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"), #color gradient
+             repel = FALSE     # Avoid overlapping numbers, which is not important, so set as false
+             )
+
+#Graph of variables. Positive correlated variables point to the same side of the plot. Negative correlated variables point to opposite sides of the graph.
+
+fviz_pca_var(viz_pca,
+             col.var = "contrib", # Color by contributions to the PC
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE #Avoid overlapping text if possible 
+             )
+
+#Biplot of schools and variables together.
+
+fviz_pca_biplot(viz_pca, repel = TRUE,
+                col.var = "#2E9FDF", # Variables color
+                col.ind = "#696969"  # Individuals color
+                )
+```
+
+
+### STEP 4: Bartlett's test 
+```{r}
+cortest.bartlett(scaled_data_pca, 232) #232 equals sample size
+```
+
+Interpretation: p-value is smaller than 0.05, which is significant and means that the R-matrix is not an identity matrix. There are some relationships between the variables in the analysis and we can conduct PCA.
+
+
+### STEP 5: KMO
+```{r}
+KMO(scaled_data_pca)
+#all data above .50 and overal MSA is strong
+```
+
+
+
+### STEP 6: Baseline PCA
+
+```{r}
+pca_base <- principal(scaled_data_pca, nfactors = 18, rotate = "none")
+
+pca_base #results
+
+#SS The eigenvalues associated with each factor represent the variance explained by that particular linear component. 
+#R calls these SS loadings (sums of squared loadings), because they are the sum of the squared loadings.
+
+#Proportion of var (ss loading divided by sample size)
+
+#How many components to extract? The number of SS loadings greater than 1 (Kaiser's criterion).
+
+#Potentialy 4 here.
+
+#scree plot using eigen values stored in pca_1$values
+plot(pca_base$values, type = "b")
+
+#plots the eigenvalues (y) against the factor number (x)
+#type = 'b' both gives you a line and points on the same graph
+
+#indicates 3-5 variables here
+
+#Let's pick 4
+```
+
+
+
+### STEP 7: Check that residuals are normally distributed
+```{r}
+pca_resid <- principal(scaled_data_pca, nfactors = 4, rotate = "none")
+pca_resid #results. 5 looks good
+
+#residuals
+#require correlation matrix for final data
+corMatrix<-cor(scaled_data_pca)
+#corMatrix
+
+#next,create an object from the correlation matrix and the pca loading. Call it residuals. It will contain the factor residuals
+residuals<-factor.residuals(corMatrix, pca_resid$loadings)
+
+#call a histogram to check residuals
+hist(residuals) #are the residuals normally distributed? They look okay. That is good
+```
+
+
+Due to the limited number of subjects, the residuals are comparatively normal distributed
+
+
+### STEP 8: Informed PCA with specific number of components
+Let's try 4 components.
+
+We are also going to rotate the data
+
+A factor is a classification axis along which variables can be plotted
+
+```{r}
+#rotation. Since factors should be related, use oblique technique (promax), if unrelated, use varimax
+pca_final <- principal(scaled_data_pca, nfactors = 4, rotate = "promax")
+pca_final #results. 
+
+#let's make the results easier to read. Include loadings over 3 and sort them
+
+print.psych(pca_final, cut = 0.3, sort = TRUE)
+
+plot(pca_final)
+fa.diagram(pca_final)
+```
+
+
+
+### STEP 9: Collect factor scores
+
+This will give you the factor scores for each observation
+
+```{r}
+
+#we need the pca scores
+pca_final_scores <- as.data.frame(pca_final$scores) #scores for each text on each factor. You can use these in subsequent analyses. Lot's of them though
+
+
+write.csv(pca_final_scores,"pca_scores_rc2_is_achieve.csv", row.names=FALSE)
+```
+
+
+```{r}
+df <- data.frame(pca_final_scores,smu %>% select(1,20) )
+cor(df %>% select(-5))
+```
+
+
+
+## **Build Up the Regression Model via K-Fold Cross Validation** 
+
+Call in all the necessary packages
+```{r}
+library(caret)
+```
+
+### Set up repeated 10-fold CV，define training control parameters
+```{r}
+#method = cross validation, number = ten times (10 fold cross-validation)
+train.control <- trainControl(method = "cv", number = 10)
+#Set up repeated k-fold cross-validation
+```
+
+### Run a cross validation model and check for suppression effects
+```{r}
+cv01 <- train(
+  form = Full_Physical_Health_H_2 ~ .,  
+  # need to use as.factor() for response to make it as categorical
+  # this line of code will be given to student
+  data = df %>% select(-5),
+  trControl = train.control,
+  method = "lm"
+  # generalized linear model (glm) is used to build logistic model
+  #specifies the distribution of the response variable
+)
+
+summary(cv01)
+```
+
+There is only one variable (RC1) is significant, so we have to deduct the other non-signifianct variables one by one based on their p-values; let;s deduct RC2 first because it has the largest t-value
+
+```{r}
+cv02 <- train(
+  form = Full_Physical_Health_H_2 ~ .,  
+  # need to use as.factor() for response to make it as categorical
+  # this line of code will be given to student
+  data = df %>% select(1,2,3,6),
+  trControl = train.control,
+  method = "lm"
+  # generalized linear model (glm) is used to build logistic model
+  #specifies the distribution of the response variable
+)
+
+summary(cv02)
+```
+
+let's deduct RC4 then, because it has the largest t-value now
+```{r}
+cv03 <- train(
+  form = Full_Physical_Health_H_2 ~ .,  
+  # need to use as.factor() for response to make it as categorical
+  # this line of code will be given to student
+  data = df %>% select(1,2,6),
+  trControl = train.control,
+  method = "lm"
+  # generalized linear model (glm) is used to build logistic model
+  #specifies the distribution of the response variable
+)
+
+summary(cv03)
+```
+
+finally, let's deduct the RC3
+```{r}
+cv04 <- train(
+  form = Full_Physical_Health_H_2 ~ .,  
+  # need to use as.factor() for response to make it as categorical
+  # this line of code will be given to student
+  data = df %>% select(1,6),
+  trControl = train.control,
+  method = "lm"
+  # generalized linear model (glm) is used to build logistic model
+  #specifies the distribution of the response variable
+)
+
+summary(cv04)
+```
+
+
+Because I have conducted PCA and I only left one indpeendent variable after pruning, I won't have problems on multicollinearity and supression effects.
+
+### Let's check if the linear regression model we build violates any assumptions!
+```{r}
+#HOMOSCEDASTICITY
+
+#Are residuals normally distributed? Yes, p-value is really small, which indicates a normal distribution.
+shapiro.test(residuals(cv04)) 
+```
+
+
+```{r}
+#let's plot the qq plot! That's really beautifu;, alomost all the scatterplots are on the line, which is good
+plot(cv04$finalModel, which = 2)
+```
+
+```{r}
+#Plot the residuals vs. the fitted values. 
+
+plot(cv04$finalModel, which = 1)
+```
+
+
+```{r}
+#plot the histogram of residuals. The histogram should look like a symmetric bell shaped curve, centered at 0. 
+hist(cv04$finalModel$residuals)
+```
+
+
+
+### Visualization
+```{r}
+actual <- df$Full_Physical_Health_H_2
+fitted <- unname(cv04$finalModel$fitted.values) #would have been a named number vector if unname not used
+
+act_fit <- cbind.data.frame(actual, fitted) #cbind binds the two vectors into a dataframe
+
+#let's draw the graph!
+ggplot(act_fit, aes(x = actual, y = fitted)) +
+  geom_point() +
+  xlab("Actual value") +
+  ylab("Predicted value") +
+  ggtitle("Scatterplot for actual and fitted values") +
+  geom_abline(intercept = 0,
+              slope = 1,
+              color = "red",
+              size = 2)
+```
+
+
+## **Disscussion**
+
+### Overview
+This paper I investigated the relationship between young adults' social media usage motivation and phyiscla health. I conducted PCA first to reduce the variable dimension and then conducted linear regression model to see what specific type of motivation relates to young adults physical health. In general, "social activity" SMU motivation significantly negatively influenced young adults' phyiscal health when the school resumed in-person class.
+
+### Discussion on PCA outcomes
+
+Based on PCA results, we can see that PCA aggregated my 18 variables into 4 pincipal components. 
+
+RC1 aggregated by support (loading = 0.9), opinion (loading = 0.8), comments (loading = 0.8),compare (loading = 0.4), academic platform (loading = 0.4), and forget (loading = 0.5), which could be interpreted as "social_activity".
+
+RC2 is aggregated by hookup (loading = 0.8), romance (loading = 0.8), family (loading = 0.4), and meet (loading = 0.5), which could be interpreted as "romance".
+
+RC3 is aggregated by eat (loading = 0.8), buy (loading = 0.8), wear (loading = 0.8), and do (loading = 0.8),which could be interpreted as "social_connection". Among these 6 variables, compare, stay)inforned and compare have lower loading than the previous three.
+
+RC4 is aggregated by relax (loading = 1), entertain (loading = 0.9), and friends (loading = 0.5), which could be interpreted as "activity". Do is comparatively smaller loading than the previous three motivations.
+
+Stay_informed is an individual variable which is not belong to any above principal components. We will leave it alone.
+
+Meanwhile, based on the results, we know that the SS loading of RC1 is 2.92, which explains 0.16 proportion variance; SS loading of RC 2 is 1.86, which explains 0.10 proportion variance; SS loading of RC3 is 2.62, which explains 0.15 proportion variance; SS loading of RC 4 is 2.22, which explains 0.12 proportion variance. Thus, these four principal components explained 0.53 proportion variance in total matrix correlation.
+
+Among these four principal components, RC1 explained 0.3 propotion, RC2 explained 0.19 proportion, RC3 explained 0.27 proportion, and RC4 explained 0.23 proportion; all of which have 1.0 cumulative proportion of the four principal components.
+
+
+### Discussion on linear regression model
+
+The estimated linear regression model function should be:
+$$
+y = 3.73 - 0.17 SocialActivity
+$$
+
+This function indicated that for every 1 unit increase in social activity, the physical health decrease by 0.17; If the social activity is 0, then the base line phyiscal health should be 3.73.
+
+Because I have conducted PCA and I only left one indpeendent variable after pruning, I won't have problems on multicollinearity and supression effects.
+
+Meanwhile, based on our test on assumption violations, we can see that my model didn't violate any assumptions.
+1) The Shapiro-Wilk normality test is a statistical test used to determine whether a sample of data comes from a normally distributed population. The test calculates a statistic called the W value, which is used to evaluate whether the sample data are likely to come from a normally distributed population. From my test result, we can see that the W value is 0.97538, which is close to 1, this indicates that the sample is likely to come from a normally distributed population.
+
+2) The QQ plot is a useful tool for evaluating whether a sample of data is likely to come from a specific distribution. From the above graph, we can see that the plot is approximately straight, this indicates that the sample data is likely to come from the specified distribution. Meanwhile, most of the points lie on the straight line, this indicates that the sample data is well-behaved and follows the specified distribution.
+
+3) The residuals vs fitted values plot is a useful tool for evaluating the fit of a regression model. Based on the above graph, the points are randomly dispersed around the horizontal line at 0, this indicates that the regression model is a good fit for the data.
+
+4) As we can see from the histogram of residuals, the graph is comparatively normal distributed.
+
+5) From the scatter plot for actual and fitted values, we can see the red line is comparatively in the middle of the graph, which represents a great sign of my model prediction. 
+
+### Discussion on hypothesis
+
+We can see that physical health has significant negative relationship with social activity, with p-value smaller than 0.05. Thus, I reject the null hypothesis for factorized factor (social activity) and fail to reject other variables' null hypothesis.
+
+We lose other variables during the variable pruning process. Nevertheless, when we go back to the full regression analysis, the slope for RC4 (named as activity) and RC2 (named as romance) were positive and the slope for RC3 (social_connection) were negative. These predictors are all not significant.
+
+
+#### Discussion on R-squared value
+
+As we keep looking at the regression results of RC1, we can see that the multiple r-squared value is 0.04352, which shows how well terms (data points) fit a curve or line. This model predicts 4.352% of the data.
+The adjusted r-squared value is 0.0392, which also indicates how well terms fit a curve or line, but adjusts for the number of terms in a model. This model predicts 3.92% of the data.
+
+Furthermore, the residual standard error is 0.78 and F-test is significant with p-value < 0.002.
+
+
+### Discussion on application of the findings
+As we know, as the technology developing quickly, increasing number of young adults get used to use social meida platforms to get connected with their loved ones and be updated with the news and events they care about. However, sometimes young adults overlook how their motivation to use social media may influence their health condition. Based on our results, we can clearly see that when young adults want to use social media platforms to show support, to comment, to express opinion, to forget, to compare with others and to used for academic purpose, these motivations work togther to negatively influence young adults' physical health. Thus, when young adults have hyiscal health issues after using the social media, they may reduce using social media for these specific motivations. At the same time, doctors should also pay attention to these specific fields of motivation.
+
+### Discussion on the limitations
+Considering the limited number of sample size, our PCA may be not accurate enough. And when I build up the model, only one factor remained, this situation may also due to my linited number of participants. Meanwhile, our data collection is based on participants' self-report, so we cannot make sure that's validate enough. 
+
+
+### Future Directions
+
+In the future, I would recommend researchers to recruit more participants to make sure they can condict validate and reliable PCA. Meanwhile, because I only focus on phyiscal health this time, I hope researchers can build up regression model between motivations and mental health or general health problems. It will also be interesting to see if specific social media functions could bring negative health influence to young adults.
