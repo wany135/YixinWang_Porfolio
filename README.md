@@ -17,7 +17,7 @@ VandEvents
 <img width="895" alt="Screen Shot 2023-02-01 at 7 19 46 PM" src="https://user-images.githubusercontent.com/100061103/216207502-801a8708-3a0f-446d-9217-23a983a51863.png">
 
 - Interviews
-[IMG_3150.pdf](https://github.com/wany135/Fall2023_MHCI_ApplicationPortfolio/files/10564018/IMG_3150.pdf)
+![IMG_6355](https://user-images.githubusercontent.com/100061103/216210695-dcc31674-0749-4caa-8551-5c849f3e5e4f.jpg)
 
 ![IMG_6354](https://user-images.githubusercontent.com/100061103/216210496-9d681f76-8130-401e-bbdd-899c90ae3eeb.jpg)
 
