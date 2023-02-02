@@ -1,6 +1,6 @@
 # Fall2023_MHCI_ApplicationPortfolio
 
-Independent Honors Project
+Independent Honors Project - Social Media Usage and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
 1. Proposal
 <img width="618" alt="Screen Shot 2023-02-01 at 7 59 27 PM" src="https://user-images.githubusercontent.com/100061103/216212547-f2c6cd60-23b8-4301-a80a-ad4a3dd0f7ad.png">
@@ -17,20 +17,24 @@ Independent Honors Project
 <img width="603" alt="Screen Shot 2023-02-01 at 8 07 11 PM" src="https://user-images.githubusercontent.com/100061103/216213521-1d1254cc-4ce5-42f3-8a21-f8203aee54d4.png">
 
 - Clutering Analysis
-<img width="425" alt="Screen Shot 2023-02-01 at 8 11 33 PM" src="https://user-images.githubusercontent.com/100061103/216214030-8c6e21ff-b5ba-452e-88a1-efe2652985ec.png">
+<img width="425" alt="Screen Shot 2023-02-01 at <img width="305" alt="Screen Shot 2023-02-01 at 8 19 14 PM" src="https://user-images.githubusercontent.com/100061103/216215059-da245efd-7fea-4da9-a64e-635e30223b83.png">
+8 11 33 PM" src="https://user-images.githubusercontent.com/100061103/216214030-8c6e21ff-b5ba-452e-88a1-efe2652985ec.png">
 
 4. Primary Data Analysis
+- Young adults' SMU was significantly higher during the pandemic than when in-person classes resumed
+![Uploading Screen Shot 2023-02-01 at 8.19.14 PM.png…]()
+
 - Young adults Social Media Usage for Social Activity significantly and negatively influence Mental and Physical health
 <img width="479" alt="total_SA_MH" src="https://user-images.githubusercontent.com/100061103/216214117-c13d7c36-7d8f-4917-b6c6-ba3c422e4c41.png">
 <img width="479" alt="total_SA_PH" src="https://user-images.githubusercontent.com/100061103/216214119-b20d45d3-8bc7-4ac3-96b3-29b5b337a2ff.png">
 
-- If young adults used Instagram for Social Activity, this Phenonmenon became evident
+- If young adults used Instagram for Social Activity, this phenonmenon became evident
 <img width="889" alt="Instagram_SA_signifiance" src="https://user-images.githubusercontent.com/100061103/216214139-e2cefa44-c104-4aba-abb1-ebe39d6ee456.png">
 
 5. Working on Results and Discussion part of Honors Thesis:)
 
 
-VandEvents 
+VandEvents⚽️
 ---------------------------------------------------------------------------------------------------
 1. Contextual Inquiry
 - Questionnaires & Important Results
@@ -70,5 +74,5 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 
 <img width="442" alt="Screen Shot 2023-02-01 at 7 31 23 PM" src="https://user-images.githubusercontent.com/100061103/216209241-5e9d8933-a13d-4167-81ad-33e6b5ffb246.png">
 
-GrappleFence
+GrappleFence🚀
 ---------------------------------------------------------------------------------------------------
