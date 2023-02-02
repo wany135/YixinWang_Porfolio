@@ -17,12 +17,11 @@ Independent Honors Project - Social Media Usage and Young Adults' Health during 
 <img width="603" alt="Screen Shot 2023-02-01 at 8 07 11 PM" src="https://user-images.githubusercontent.com/100061103/216213521-1d1254cc-4ce5-42f3-8a21-f8203aee54d4.png">
 
 - Clutering Analysis
-<img width="425" alt="Screen Shot 2023-02-01 at <img width="305" alt="Screen Shot 2023-02-01 at 8 19 14 PM" src="https://user-images.githubusercontent.com/100061103/216215059-da245efd-7fea-4da9-a64e-635e30223b83.png">
-8 11 33 PM" src="https://user-images.githubusercontent.com/100061103/216214030-8c6e21ff-b5ba-452e-88a1-efe2652985ec.png">
+<img width="425" alt="Screen Shot 2023-02-01 at 8 11 33 PM" src="https://user-images.githubusercontent.com/100061103/216215339-ffd3baee-44e3-4775-be52-129b04278e33.png">
 
 4. Primary Data Analysis
 - Young adults' SMU was significantly higher during the pandemic than when in-person classes resumed
-![Uploading Screen Shot 2023-02-01 at 8.19.14 PM.png…]()
+<img width="305" alt="Screen Shot 2023-02-01 at 8 19 14 PM" src="https://user-images.githubusercontent.com/100061103/216215249-2fb72eb7-510a-49d3-a2f0-d62be68369a5.png">
 
 - Young adults Social Media Usage for Social Activity significantly and negatively influence Mental and Physical health
 <img width="479" alt="total_SA_MH" src="https://user-images.githubusercontent.com/100061103/216214117-c13d7c36-7d8f-4917-b6c6-ba3c422e4c41.png">
