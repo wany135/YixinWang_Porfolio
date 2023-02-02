@@ -33,7 +33,7 @@ Independent Honors Project - Social Media Usage and Young Adults' Health during 
 5. Working on Results and Discussion part of Honors Thesis:)
 
 
-VandEvents⚽️
+VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
 ---------------------------------------------------------------------------------------------------
 1. Contextual Inquiry
 - Questionnaires & Important Results
@@ -73,7 +73,7 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 
 <img width="442" alt="Screen Shot 2023-02-01 at 7 31 23 PM" src="https://user-images.githubusercontent.com/100061103/216209241-5e9d8933-a13d-4167-81ad-33e6b5ffb246.png">
 
-GrappleFence🚀
+GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 ---------------------------------------------------------------------------------------------------
 1. I self-learned and designed the whole immersive background in Unity!
 <img width="1085" alt="Screen Shot 2023-02-01 at 8 25 30 PM" src="https://user-images.githubusercontent.com/100061103/216215916-033ae49d-55db-4581-a3ea-f02541ec9690.png">
@@ -82,7 +82,7 @@ GrappleFence🚀
 <img width="746" alt="Screen Shot 2023-02-01 at 8 33 51 PM" src="https://user-images.githubusercontent.com/100061103/216217381-cac3ca44-3c59-40d8-938b-30d7a7545375.png">
 <img width="746" alt="Screen Shot 2023-02-01 at 8 37 33 PM" src="https://user-images.githubusercontent.com/100061103/216217514-a0d343d4-d5be-41e1-baae-0f3041cf1162.png">
 
-3. Implemented interactable and refreshable dummies and targets for practice
+3. Implemented interactable and refreshable dummies and targets for VR fighting adaptation and self-practice
 <img width="746" alt="Screen Shot 2023-02-01 at 8 33 00 PM" src="https://user-images.githubusercontent.com/100061103/216217328-c8895eeb-a895-465b-8195-c219d86e2058.png">
 
 <img width="746" alt="Screen Shot 2023-02-01 at 8 35 11 PM" src="https://user-images.githubusercontent.com/100061103/216217418-010b4268-9a96-41b5-91da-10dcfd6dc6b5.png">
