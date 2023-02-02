@@ -7,9 +7,20 @@ File Included:
 
 VandEvents 
 ---------------------------------------------------------------------------------------------------
+1. Context Inquiry
+- Questionnaires & Important Results
+
+<img width="1087" alt="Screen Shot 2023-02-01 at 7 36 49 PM" src="https://user-images.githubusercontent.com/100061103/216209865-bf300afe-a3d9-4d4b-adf3-128b36030381.png">
+
 <img width="787" alt="Screen Shot 2023-02-01 at 7 18 30 PM" src="https://user-images.githubusercontent.com/100061103/216207497-d1f4105f-e2fd-4083-95d8-b99c4b58221a.png">
 
 <img width="895" alt="Screen Shot 2023-02-01 at 7 19 46 PM" src="https://user-images.githubusercontent.com/100061103/216207502-801a8708-3a0f-446d-9217-23a983a51863.png">
+
+- Interviews
+[IMG_3150.pdf](https://github.com/wany135/Fall2023_MHCI_ApplicationPortfolio/files/10564018/IMG_3150.pdf)
+
+![IMG_6354](https://user-images.githubusercontent.com/100061103/216210496-9d681f76-8130-401e-bbdd-899c90ae3eeb.jpg)
+
 
 <img width="895" alt="Screen Shot 2023-02-01 at 7 26 39 PM" src="https://user-images.githubusercontent.com/100061103/216208451-c01ce533-c11f-4513-962f-3a808f48414a.png">
 
