@@ -36,7 +36,8 @@ VandEvents
 
 <img width="576" alt="Screen Shot 2023-02-01 at 7 11 44 PM" src="https://user-images.githubusercontent.com/100061103/216206749-14d23cae-9ab5-4542-962b-a529b76a1826.png">
 
-<img width="795" alt="Screen Shot 2023-02-01 at 7 11 16 PM" src="https://user-images.githubusercontent.com/100061103/216206758-918c9541-1745-47ff-a9aa-32182ddf28a5.png">
+<img width="795" alt="Screen Shot 2023-02-01 at 7 11 16 PM" src="https://user-images.githubusercontent.com/100061103/216211318-e7b8307d-8371-4c18-89c4-e16704a2857f.png">
+
 
 3. Usability Testing Procedure & Results
 ![IMG_6351](https://user-images.githubusercontent.com/100061103/216209177-876a8782-90bd-4c31-bc4d-aac554978dd2.jpg)
