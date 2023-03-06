@@ -1,6 +1,6 @@
 # Yixin_Wang_Fall_2023_MSHCI_ApplicationPortfolio
 
-Independent Honors Project - Social Media Usage and Young Adults' Health during and after the Pandemic
+Independent Honors Project - Social Media Usage, Motivation and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
 1. Proposal
 <img width="618" alt="Screen Shot 2023-02-01 at 7 59 27 PM" src="https://user-images.githubusercontent.com/100061103/216212547-f2c6cd60-23b8-4301-a80a-ad4a3dd0f7ad.png">
