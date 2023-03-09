@@ -53,6 +53,7 @@ VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
 - Questionnaires & Important Results
 https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edit
 
+- As we can see, "Popularity", representing friends attending, is the third important information that students are concerned about while making decisions on attending school events.
 <img width="1087" alt="Screen Shot 2023-02-01 at 7 36 49 PM" src="https://user-images.githubusercontent.com/100061103/216209865-bf300afe-a3d9-4d4b-adf3-128b36030381.png">
 
 <img width="787" alt="Screen Shot 2023-02-01 at 7 18 30 PM" src="https://user-images.githubusercontent.com/100061103/216207497-d1f4105f-e2fd-4083-95d8-b99c4b58221a.png">
@@ -86,6 +87,8 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 ![IMG_6351](https://user-images.githubusercontent.com/100061103/216209177-876a8782-90bd-4c31-bc4d-aac554978dd2.jpg)
 
 <img width="442" alt="Screen Shot 2023-02-01 at 7 31 23 PM" src="https://user-images.githubusercontent.com/100061103/216209241-5e9d8933-a13d-4167-81ad-33e6b5ffb246.png">
+
+4. Currently conducting ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role. I'm finding the "magic ingredients" in the pot.
 
 GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 ---------------------------------------------------------------------------------------------------
