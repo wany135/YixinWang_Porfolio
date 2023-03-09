@@ -37,6 +37,11 @@ H3: Finally, we expected to explore if particular motivations would lead to diff
 - Young adults' SMU was significantly higher during the pandemic than when in-person classes resumed
 <img width="305" alt="Screen Shot 2023-02-01 at 8 19 14 PM" src="https://user-images.githubusercontent.com/100061103/216215249-2fb72eb7-510a-49d3-a2f0-d62be68369a5.png">
 
+- Interestingly, young adults' addiction score during the pandemic is much higher than that after the pandemic. However, considering addiction is considered to be a long-term mental illness, which shouldn't supposed to be relieved so quickly right after the pandemic. This could be influenced by the survey questions on measuring addiction and the different SMU patterns during and after the pandemic. I'm using ANOVA to try to figure this question out.
+
+<img width="716" alt="Screen Shot 2023-03-09 at 11 23 58 AM" src="https://user-images.githubusercontent.com/100061103/224106532-122e019b-d670-489c-9f30-167f3d1ddbc2.png">
+
+
 - Young adults Social Media Usage for Social Activity significantly and negatively influence Mental and Physical health
 <img width="479" alt="total_SA_MH" src="https://user-images.githubusercontent.com/100061103/216214117-c13d7c36-7d8f-4917-b6c6-ba3c422e4c41.png">
 <img width="479" alt="total_SA_PH" src="https://user-images.githubusercontent.com/100061103/216214119-b20d45d3-8bc7-4ac3-96b3-29b5b337a2ff.png">
