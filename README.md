@@ -14,7 +14,7 @@ H2b: We also predicted that SMU intensity would be unrelated to mental health, p
 
 H2c: We hypothesized that well-being, mental health, and perceived stress would increase SMU addiction problems.
 
-H3: Finally, we expected to explore if particular motivations mediated the hypothesized associations.
+H3: Finally, we expected to explore if particular motivations would lead to different patterns of SMU could lead to different effects on psychological and physiological health.
 
 1. Proposal
 <img width="618" alt="Screen Shot 2023-02-01 at 7 59 27 PM" src="https://user-images.githubusercontent.com/100061103/216212547-f2c6cd60-23b8-4301-a80a-ad4a3dd0f7ad.png">
