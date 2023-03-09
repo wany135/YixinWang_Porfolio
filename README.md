@@ -1,7 +1,21 @@
 # Yixin_Wang_Fall_2023_MSHCI_ApplicationPortfolio
 
-Independent Honors Project - Social Media Usage, Motivation and Young Adults' Health during and after the Pandemic
+Independent Honors Project - Social Media Usage, SMU Addiction, SMU Motivation and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
+In my research project, I wanted to answer the following hypothesis questions:
+
+H1a: Considering at T1, most students are required to quarantine at home, so they are more likely to get connected through social media than in T2 when schools resumed in-person classes.   Thus, I propose that young adults would report higher SMU intensity at the first timestamp than at the second timestamp.
+
+H1b: Young adults' responses would indicate more severe SMU addiction problems at the second timestamp than the first timestamp.
+
+H2a: We predicted that young adults who are high vs. low on SMU addiction show different patterns of SMU, and those different patterns are associated with better or poorer mental health. We did not advance specific predictions for specific SMU patterns but examined their relations in a more exploratory way. We expect the SMU patterns positively associated with SMU addiction to be associated with poorer mental health, whereas those associated with low SMU addiction would be associated with better mental health.
+
+H2b: We also predicted that SMU intensity would be unrelated to mental health, physical health, well-being, and perceived stress in any direction among young adults.
+
+H2c: We hypothesized that well-being, mental health, and perceived stress would increase SMU addiction problems.
+
+H3: Finally, we expected to explore if particular motivations mediated the hypothesized associations.
+
 1. Proposal
 <img width="618" alt="Screen Shot 2023-02-01 at 7 59 27 PM" src="https://user-images.githubusercontent.com/100061103/216212547-f2c6cd60-23b8-4301-a80a-ad4a3dd0f7ad.png">
 
