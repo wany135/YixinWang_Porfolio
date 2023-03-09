@@ -44,7 +44,7 @@ H3: Finally, we expected to explore if particular motivations would lead to diff
 - If young adults used Instagram for Social Activity, this phenonmenon became evident
 <img width="889" alt="Instagram_SA_signifiance" src="https://user-images.githubusercontent.com/100061103/216214139-e2cefa44-c104-4aba-abb1-ebe39d6ee456.png">
 
-5. Working on Results and Discussion part of Honors Thesis:)
+4. Currently conducting ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role. I'm finding the "magic ingredients" in the pot.
 
 
 VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
@@ -88,7 +88,7 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 
 <img width="442" alt="Screen Shot 2023-02-01 at 7 31 23 PM" src="https://user-images.githubusercontent.com/100061103/216209241-5e9d8933-a13d-4167-81ad-33e6b5ffb246.png">
 
-4. Currently conducting ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role. I'm finding the "magic ingredients" in the pot.
+
 
 GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 ---------------------------------------------------------------------------------------------------
