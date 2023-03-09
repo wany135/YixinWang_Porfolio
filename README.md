@@ -16,7 +16,7 @@ H2c: We hypothesized that well-being, mental health, and perceived stress would 
 
 H3: Finally, we expected to explore if particular motivations would lead to different patterns of SMU could lead to different effects on psychological and physiological health.
 
-1. Proposal
+1. Proposal (The full version is in the github file archive)
 <img width="618" alt="Screen Shot 2023-02-01 at 7 59 27 PM" src="https://user-images.githubusercontent.com/100061103/216212547-f2c6cd60-23b8-4301-a80a-ad4a3dd0f7ad.png">
 
 2. Survey Design and Data Collection
