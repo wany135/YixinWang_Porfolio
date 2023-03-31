@@ -4,7 +4,7 @@ Catalog:
 2. UX Design: VandEvents
 3. VR Game Design: GrappleFence
 
-Independent Honors Project - Social Media Usage, SMU Addiction, SMU Motivation and Young Adults' Health during and after the Pandemic
+1.Independent Honors Project - Social Media Usage, SMU Addiction, SMU Motivation and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
 In my research project, I wanted to answer the following hypothesis questions:
 
@@ -59,7 +59,7 @@ H3: Finally, we expected to explore if particular motivations would lead to diff
 <img width="396" alt="Screen Shot 2023-03-31 at 5 06 16 PM" src="https://user-images.githubusercontent.com/100061103/229241350-8eaf7f82-b05d-473f-b555-e149d3649a08.png">
 <img width="524" alt="Screen Shot 2023-03-31 at 5 05 34 PM" src="https://user-images.githubusercontent.com/100061103/229241266-63e78920-340c-4e64-9a29-c022d4025db0.png">
 
-VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
+2.VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
 ---------------------------------------------------------------------------------------------------
 1. Contextual Inquiry
 - Questionnaires & Important Results
@@ -102,7 +102,7 @@ https://docs.google.com/forms/d/1MzVVKGKs4V_OHr3WxvhEo-pyeZApbylOBrgrZ0lzeBc/edi
 
 
 
-GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
+3.GrappleFence🚀 - Class Project of CSET 3257: Virtual Reality Game Design
 ---------------------------------------------------------------------------------------------------
 1. I self-learned most techniques and designed the whole immersive background in Unity!
 <img width="1085" alt="Screen Shot 2023-02-01 at 8 25 30 PM" src="https://user-images.githubusercontent.com/100061103/216215916-033ae49d-55db-4581-a3ea-f02541ec9690.png">
