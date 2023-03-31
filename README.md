@@ -49,7 +49,12 @@ H3: Finally, we expected to explore if particular motivations would lead to diff
 - If young adults used Instagram for Social Activity, this phenonmenon became evident
 <img width="889" alt="Instagram_SA_signifiance" src="https://user-images.githubusercontent.com/100061103/216214139-e2cefa44-c104-4aba-abb1-ebe39d6ee456.png">
 
-4. Currently conducting ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role. I'm finding the "magic ingredients" in the pot.
+4. Conducted ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role.
+<img width="453" alt="Screen Shot 2023-03-31 at 5 04 43 PM" src="https://user-images.githubusercontent.com/100061103/229241183-2aa3cb52-315e-4892-b629-3314b077559b.png">
+<img width="503" alt="Screen Shot 2023-03-31 at 5 04 58 PM" src="https://user-images.githubusercontent.com/100061103/229241213-5c3ecefe-1b9e-40e7-a23b-f40972cd2267.png"><img width="478" alt="Screen Shot 2023-03-31 at 5 05 11 PM" src="https://user-images.githubusercontent.com/100061103/229241233-b596685f-ef72-4e05-92fa-a2f47604b6d9.png">
+<img width="524" alt="Screen Shot 2023-03-31 at 5 05 34 PM" src="https://user-images.githubusercontent.com/100061103/229241266-63e78920-340c-4e64-9a29-c022d4025db0.png">
+
+
 
 
 VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
