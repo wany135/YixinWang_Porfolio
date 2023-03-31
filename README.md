@@ -52,9 +52,8 @@ H3: Finally, we expected to explore if particular motivations would lead to diff
 4. Conducted ANOVA test for H2a hypothesis to figure out if both SMU addiction and different SMU patterns influence young adults' health, or one of them plays the most important role.
 <img width="453" alt="Screen Shot 2023-03-31 at 5 04 43 PM" src="https://user-images.githubusercontent.com/100061103/229241183-2aa3cb52-315e-4892-b629-3314b077559b.png">
 <img width="503" alt="Screen Shot 2023-03-31 at 5 04 58 PM" src="https://user-images.githubusercontent.com/100061103/229241213-5c3ecefe-1b9e-40e7-a23b-f40972cd2267.png">
-
-<img width="524" alt="Screen Shot 2023-03-31 at 5 05 34 PM" src="https://user-images.githubusercontent.com/100061103/229241266-63e78920-340c-4e64-9a29-c022d4025db0.png">
 <img width="396" alt="Screen Shot 2023-03-31 at 5 06 16 PM" src="https://user-images.githubusercontent.com/100061103/229241350-8eaf7f82-b05d-473f-b555-e149d3649a08.png">
+<img width="524" alt="Screen Shot 2023-03-31 at 5 05 34 PM" src="https://user-images.githubusercontent.com/100061103/229241266-63e78920-340c-4e64-9a29-c022d4025db0.png">
 
 VandEvents⚽️ - Class Project of CS 4376: Fundamentals of HCI
 ---------------------------------------------------------------------------------------------------
