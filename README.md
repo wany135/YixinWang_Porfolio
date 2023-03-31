@@ -1,4 +1,4 @@
-# Yixin_Wang_Fall_2023_MSHCI_ApplicationPortfolio
+# Yixin_Wang_Portfolio
 
 Independent Honors Project - Social Media Usage, SMU Addiction, SMU Motivation and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
