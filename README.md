@@ -1,4 +1,8 @@
 # Yixin_Wang_Portfolio
+Catalog:
+1. UX Research: Independent Research Project on exploring Young Adults' Social Media Usage, SMU Addiction, SMU Motivation, and Health during and after the pandemic
+2. UX Design: VandEvents
+3. VR Game Design: GrappleFence
 
 Independent Honors Project - Social Media Usage, SMU Addiction, SMU Motivation and Young Adults' Health during and after the Pandemic
 ---------------------------------------------------------------------------------------------------
